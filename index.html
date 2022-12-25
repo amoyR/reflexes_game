@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>reflexes_game</title>
+</head>
+
+<body>
+
+  <script src="https://cdn.jsdelivr.net/gh/phinajs/phina.js@v0.2.0/build/phina.js"></script>
+  <!--script src="https://cdn.jsdelivr.net/gh/alkn203/phina-extensions@master/build/phina-extensions.min.js"></script-->
+  <script type="text/javascript">
+      'use strict';
+  
+      if (!phina.util.Support.webAudio) {
+        alert('webAudioに対応していません！最新のブラウザを使って下さい！');
+      }
+  
+      // IE対策
+      // var ua = phina.global.navigator.userAgent;
+      // if (ua.indexOf('Trident') > 0) {
+      //   alert('インターネットエクスプローラーには対応してません！');
+      // }
+  
+      phina.globalize();
+  </script>
+  <script src="./config.js"></script>
+  <script src="./title.js"></script>
+  <script src="./main.js"></script>
+  <script src="./result.js"></script>
+</body>
+
+</html>
